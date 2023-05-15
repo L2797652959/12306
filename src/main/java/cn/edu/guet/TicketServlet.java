@@ -14,9 +14,9 @@ public class TicketServlet extends HttpServlet {
         String toStation = request.getParameter("toStation");
         String departureDate = request.getParameter("departureDate");
 
-        System.out.println(fromStation);
-        System.out.println(toStation);
-        System.out.println(departureDate);
+        System.out.println("起始站："+fromStation);
+        System.out.println("终点站："+toStation);
+        System.out.println("日期"+departureDate);
 
         String allTickets = TicketSearch.search(fromStation, toStation, departureDate);
 

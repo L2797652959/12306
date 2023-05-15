@@ -20,20 +20,29 @@
                 // Ajax发送请求
                 request=new XMLHttpRequest();
                 request.onreadystatechange=callBack;//callBack:回调函数
-                request.open("GET","https://kyfw.12306.cn/otn/leftTicket/query?leftTicketDTO.train_date=2023-05-09&leftTicketDTO.from_station=GLZ&leftTicketDTO.to_station=GZQ&purpose_codes=ADULT");
+
+                fromStation=document.getElementById("fromStation").value;
+                toStation=document.getElementById("toStation").value;
+                departureDate=document.getElementById("departureDate").value;
+                // request.open("GET","/searchTicket?fromStation=桂林&toStation=广州&departureDate=2023-5-18");
+                request.open("GET","/searchTicket?fromStation="+fromStation+"&toStation="+toStation+"&departureDate="+departureDate);
                 request.send(null);
             }
-            // function callBack(){
-            //     console.log("我是回调函数");
-            // }
+            function callBack(){
+                console.log("我是回调函数");
+                if(request.readyState==4){
+                    // 请求完成
+                    if(request.status==200){
+                        console.log("服务器返回车次数据",request.responseText);
+                    }
+                }
+            }
         </script>
     <body>
-        <form action="/searchTicket" method="get">
             <label from="fromStation">起始站：</label> <input type="text" id="fromStation" name="fromStation">
             <label from="toStation">到达站：</label> <input type="text" id="toStation" name="toStation">
             <label from="departureDate">出发日期：</label> <input type="date" id="departureDate" name="departureDate">
-            <button id="search" type="submit" onclick="search()">查询</button>
-        </form>
+            <button id="search" onclick="search()">查询</button>
 
         <table id="train">
             <thead>
@@ -47,5 +56,5 @@
             </thead>
         </table>
             <button onclick="search()" class="search">查询</button>
-        <div>keytool -importcert -file D:\_.12306.cn.crt -keystore "C:\Program Files\Java\jdk-17.0.5\lib\security\cacerts" -storepass changeit</div>
+<!--        <div>keytool -importcert -file D:\_.12306.cn.crt -keystore "C:\Program Files\Java\jdk-17.0.5\lib\security\cacerts" -storepass changeit</div>-->
     </body>
