@@ -12,8 +12,6 @@
     <list default="true" id="6d150086-39fa-4638-af11-76d2196d639c" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/guet/TicketSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/guet/TicketSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/guet/TicketServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/guet/TicketServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/12306.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/12306.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" />
     </list>
@@ -23,6 +21,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -169,50 +173,11 @@
       <workItem from="1683449039426" duration="5000" />
       <workItem from="1683630950285" duration="9026000" />
       <workItem from="1683803810070" duration="285000" />
-      <workItem from="1683804244567" duration="2291000" />
-      <workItem from="1683979880737" duration="5064000" />
-      <workItem from="1684141656089" duration="402000" />
+      <workItem from="1683804244567" duration="5793000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="0275a903-5cec-4063-a9e8-a2bd3590533b">
-          <value>
-            <State>
-              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="HEAD" />
-                      </list>
-                    </value>
-                  </entry>
-                  <entry key="roots">
-                    <value>
-                      <list>
-                        <option value="$PROJECT_DIR$" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="OPEN_GENERIC_TABS">
-      <map>
-        <entry key="0275a903-5cec-4063-a9e8-a2bd3590533b" value="TOOL_WINDOW" />
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
